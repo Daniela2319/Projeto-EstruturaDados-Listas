@@ -4,15 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d41cdabf-3557-4d09-aa30-4f88baf576ee" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProjetoListas.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ProjetoListaEncadeada/ListaEncadeada.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ProjetoListaEncadeada/No.java" afterDir="false" />
+    <list default="true" id="d41cdabf-3557-4d09-aa30-4f88baf576ee" name="Changes" comment="Projeto estrutura dados listas">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ProjetoListaEncadeada/ListaEncadeada.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProjetoListaEncadeada/ListaEncadeada.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +38,23 @@
         </map>
       </branch-storage>
     </excluded-from-favorite>
+    <favorite-branches>
+      <branch-storage>
+        <map>
+          <entry type="LOCAL">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="main" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </favorite-branches>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="5" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -73,6 +84,21 @@
       <option name="presentableId" value="Default" />
       <updated>1665143166821</updated>
     </task>
+    <task id="LOCAL-00001" summary="Projeto estrutura dados listas">
+      <created>1665151225643</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1665151225643</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Projeto estrutura dados listas">
+      <created>1665151576395</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1665151576395</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -85,6 +111,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Projeto estrutura dados listas" />
+    <option name="LAST_COMMIT_MESSAGE" value="Projeto estrutura dados listas" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand>

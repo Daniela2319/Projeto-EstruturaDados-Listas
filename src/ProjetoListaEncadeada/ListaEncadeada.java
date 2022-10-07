@@ -22,7 +22,34 @@ public class ListaEncadeada <T> {
         noAuxiliar.setProximoNo(novoNo);            // chega noAuxiliar seta novoNo adiciona.
     }
 
+    public T get(int index){ // método get (index) é o índice aonde vai utilizar as informações
+        return getNo(index).getConteudo();
 
+    }
+
+
+    private No<T> getNo(int index){// método interno da classe
+        validaIndice(index);  // validação do método /Exemplo: Como a minha lista tem tamannho 2, passando para o tamanho 4 precisa fazer validação o índice.
+        No<T> noAuxiliar = referenciaEntrada; // Criando um nó generico chamado noAuxiliar,recebe a referencia referenciaEntrada
+        No<T> noRetorno = null;               // criando outro nó será o no retorno referencia é nula
+
+        for (int i = 0; i < this.size()-1; i++){ // for vai correr até o índece (index)
+            noRetorno = noAuxiliar;              // esse noRetorno vai ser guardado antes de fazer passagem do proximo nó
+            noAuxiliar = noAuxiliar.getProximoNo(); // passagem do proximo nó
+        }
+        return noRetorno;
+    }
+
+    public T remove(int index){// método remove para remover o nó index
+        No<T> noPivor = this.getNo(index);
+        if(index == 0){ // teste se índex for igual a zero quer dizer esta removendo o primeiro nó
+           referenciaEntrada = noPivor.getProximoNo(); //este apontado para o segundo nó
+           return noPivor.getConteudo(); // retornar contéudo do nó pivo
+        }
+        No<T> noAnterior = getNo(index -1); // Foi pego o no anterior
+        noAnterior.setProximoNo(noPivor.getProximoNo());// disse noAnterior é o nó depois da frente dele
+        return noPivor.getConteudo(); // perco referencia de acesso
+    }
 
     public int size(){
         int tamanhoLista = 0;
@@ -40,6 +67,15 @@ public class ListaEncadeada <T> {
             }
         }
         return tamanhoLista; // Quebra os while
+    }
+
+    private void validaIndice(int index){
+        if (index >= size()){ // teste caso index seja maior size soltar exception
+            int ultimoIndice = size() - 1;
+            throw new IndexOutOfBoundsException("Não existe contéudo no índice" + index + " desta lista. Esta lista só vai até índice " + ultimoIndice + '.');
+
+        }
+
     }
 
     public boolean isEmpty(){
