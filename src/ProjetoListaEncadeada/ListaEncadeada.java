@@ -33,7 +33,7 @@ public class ListaEncadeada <T> {
         No<T> noAuxiliar = referenciaEntrada; // Criando um nó generico chamado noAuxiliar,recebe a referencia referenciaEntrada
         No<T> noRetorno = null;               // criando outro nó será o no retorno referencia é nula
 
-        for (int i = 0; i < this.size()-1; i++){ // for vai correr até o índece (index)
+        for (int i = 0; i < index; i++){ // for vai correr até o índece (index)
             noRetorno = noAuxiliar;              // esse noRetorno vai ser guardado antes de fazer passagem do proximo nó
             noAuxiliar = noAuxiliar.getProximoNo(); // passagem do proximo nó
         }
@@ -81,4 +81,23 @@ public class ListaEncadeada <T> {
     public boolean isEmpty(){
         return referenciaEntrada == null ? true : false;
     }
+
+    @Override
+    public String toString() {
+
+        String strRetorno = " ";
+
+        No<T> noAuxiliar = referenciaEntrada; // criado um nó noAuxiliar com a referência de entrada
+
+        for (int i = 0; i < this.size(); i++){ // for correr em toda a nossa lista
+            strRetorno += "No{contéudo" + noAuxiliar.getConteudo() + "}---->"; //
+            noAuxiliar = noAuxiliar.getProximoNo(); // noAuxiliar estou usando pra correr a lista
+                                                    // noAuxiliar recebe o proprio noAuxiliar passa a ser o nó da frente dele em cada ciclo.
+        }
+        strRetorno += "null"; // ultimo nó é sempre aponta nulo.
+
+
+        return strRetorno;
+    }
 }
+
