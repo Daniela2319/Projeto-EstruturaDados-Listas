@@ -26,5 +26,14 @@ Os métodos que foram utilizados:
 
 
 
+
+
+
+👨‍🏫 Instrutor: João Dutra da DIO.
+
+
+
+
+
  
 
